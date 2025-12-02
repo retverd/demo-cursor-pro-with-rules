@@ -1,0 +1,13 @@
+---
+Description: Rules for Python
+alwaysApply: true
+---
+
+- Target Python 3.14 for all code
+- Prefer `pathlib` and `typing` over legacy modules (`os.path`, `typing.List`)
+- Always add type annotations and `from __future__ import annotations` when needed
+- Configure `ruff`/`black` for auto-formatting and follow PEP 8
+- Use `argparse`/`pydantic` for CLI and configs; avoid manual `sys.argv` parsing
+- Cover new modules with `pytest` tests and use `pytest-asyncio` for async code
+- Write docstrings for all functions and include a module description at the top of each .py file
+- Docstrings and inline comments should be in Russian
